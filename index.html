@@ -1,115 +1,154 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Риштування UA — Оренда риштування та тур</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Риштування UA — Оренда риштування та тури</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
-      margin: 0;
       font-family: 'Roboto', sans-serif;
-      background: #f9f9f9;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f7fa;
       color: #333;
     }
     header {
       background: #004080;
       color: white;
-      padding: 40px 20px;
       text-align: center;
+      padding: 60px 20px;
     }
     header h1 {
       margin: 0;
-      font-size: 2.5em;
+      font-size: 3em;
     }
     header p {
       font-size: 1.2em;
+      margin-top: 10px;
+    }
+    .cta-button {
+      background: #ff6600;
+      color: white;
+      padding: 15px 30px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 1.1em;
+      margin-top: 20px;
+      display: inline-block;
+    }
+    .cta-button:hover {
+      background: #e65c00;
     }
     section {
       padding: 40px 20px;
-      max-width: 1000px;
+      max-width: 1200px;
       margin: auto;
     }
     .services, .contact {
       display: flex;
       flex-wrap: wrap;
       gap: 20px;
+      justify-content: space-between;
     }
-    .card {
-      flex: 1 1 45%;
+    .service, .contact-info, .form-container {
       background: white;
       border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       padding: 20px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      flex: 1;
+      min-width: 300px;
     }
-    .card img {
+    .service img {
       width: 100%;
       height: 200px;
       object-fit: cover;
-      border-radius: 6px;
+      border-radius: 8px;
     }
-    .btn {
-      display: inline-block;
-      margin-top: 20px;
-      background: #004080;
-      color: white;
-      padding: 12px 20px;
+    .service h3 {
+      margin-top: 15px;
+      font-size: 1.5em;
+    }
+    .service p {
+      font-size: 1.1em;
+      margin-top: 10px;
+    }
+    .contact-info h3, .form-container h3 {
+      font-size: 1.5em;
+      margin-bottom: 15px;
+    }
+    .contact-info p {
+      font-size: 1.1em;
+      margin-bottom: 10px;
+    }
+    .contact-info a {
+      color: #004080;
       text-decoration: none;
-      border-radius: 6px;
+    }
+    .contact-info a:hover {
+      text-decoration: underline;
     }
     iframe {
       width: 100%;
       height: 300px;
       border: none;
+      border-radius: 8px;
       margin-top: 20px;
-    }
-    footer {
-      background: #222;
-      color: #ccc;
-      text-align: center;
-      padding: 20px;
-      font-size: 0.9em;
     }
     form input, form textarea {
       width: 100%;
-      padding: 10px;
+      padding: 12px;
       margin: 10px 0;
       border: 1px solid #ccc;
-      border-radius: 4px;
+      border-radius: 5px;
+      font-size: 1.1em;
     }
     form button {
-      padding: 10px 20px;
       background: #004080;
       color: white;
+      padding: 15px 30px;
       border: none;
-      border-radius: 4px;
+      border-radius: 5px;
+      font-size: 1.2em;
       cursor: pointer;
     }
-    @media (max-width: 768px) {
-      .card {
-        flex: 1 1 100%;
-      }
+    form button:hover {
+      background: #003366;
+    }
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 1em;
+    }
+    footer a {
+      color: #ff6600;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Риштування UA</h1>
-    <p>Оренда будівельного риштування та тур по Черкасах та області</p>
-    <a href="#contact" class="btn">Залишити заявку</a>
+    <p>Оренда будівельного риштування та тури по Черкасах та області</p>
+    <a href="#contact" class="cta-button">Залишити заявку</a>
   </header>
 
   <section>
     <h2>Наші послуги</h2>
     <div class="services">
-      <div class="card">
-        <img src="https://source.unsplash.com/800x600/?scaffolding" alt="Риштування">
+      <div class="service">
+        <img src="https://source.unsplash.com/800x600/?scaffolding" alt="Оренда риштування">
         <h3>Оренда риштування</h3>
         <p>Надійне та безпечне риштування для фасадних, внутрішніх і покрівельних робіт. Доставка по місту і області.</p>
       </div>
-      <div class="card">
-        <img src="https://source.unsplash.com/800x600/?construction-tower" alt="Будівельна тура">
-        <h3>Оренда тур</h3>
+      <div class="service">
+        <img src="https://source.unsplash.com/800x600/?construction-tower" alt="Оренда тури">
+        <h3>Оренда тури</h3>
         <p>Зручні пересувні вишки-тури для роботи в приміщеннях та на відкритому повітрі. Легкий монтаж.</p>
       </div>
     </div>
@@ -118,26 +157,20 @@
   <section id="contact">
     <h2>Зв’яжіться з нами</h2>
     <div class="contact">
-      <div class="card">
+      <div class="contact-info">
         <h3>Контакти</h3>
         <p>📞 <a href="tel:+380930145237">093-01-45-237</a></p>
         <p>💬 <a href="viber://chat?number=+380930145237">Viber</a> | <a href="https://t.me/share/url?url=https://t.me/your_username">Telegram</a></p>
         <iframe src="https://maps.google.com/maps?q=49.4260926,32.0614230&z=15&output=embed"></iframe>
       </div>
-      <div class="card">
+      <div class="form-container">
         <h3>Залишити заявку</h3>
-        <form>
-          <input type="text" placeholder="Ваше ім’я" required>
-          <input type="tel" placeholder="Телефон" required>
-          <textarea placeholder="Ваше повідомлення" rows="4"></textarea>
+        <form action="https://formspree.io/f/maykzqjv" method="POST">
+          <input type="text" name="name" placeholder="Ваше ім’я" required>
+          <input type="tel" name="phone" placeholder="Телефон" required>
+          <textarea name="message" placeholder="Ваше повідомлення" rows="4"></textarea>
           <button type="submit">Надіслати</button>
-        </form>
-      </div>
-    </div>
-  </section>
+        </
+::contentReference[oaicite:0]{index=0}
+ 
 
-  <footer>
-    &copy; 2025 Риштування UA. Всі права захищено.
-  </footer>
-</body>
-</html>
