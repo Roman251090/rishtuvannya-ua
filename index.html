@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Риштування UA — Оренда риштування та тур</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: #004080;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    header p {
+      font-size: 1.2em;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .services, .contact {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .card {
+      flex: 1 1 45%;
+      background: white;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 6px;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      background: #004080;
+      color: white;
+      padding: 12px 20px;
+      text-decoration: none;
+      border-radius: 6px;
+    }
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+      margin-top: 20px;
+    }
+    footer {
+      background: #222;
+      color: #ccc;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    form button {
+      padding: 10px 20px;
+      background: #004080;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    @media (max-width: 768px) {
+      .card {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Риштування UA</h1>
+    <p>Оренда будівельного риштування та тур по Черкасах та області</p>
+    <a href="#contact" class="btn">Залишити заявку</a>
+  </header>
+
+  <section>
+    <h2>Наші послуги</h2>
+    <div class="services">
+      <div class="card">
+        <img src="https://source.unsplash.com/800x600/?scaffolding" alt="Риштування">
+        <h3>Оренда риштування</h3>
+        <p>Надійне та безпечне риштування для фасадних, внутрішніх і покрівельних робіт. Доставка по місту і області.</p>
+      </div>
+      <div class="card">
+        <img src="https://source.unsplash.com/800x600/?construction-tower" alt="Будівельна тура">
+        <h3>Оренда тур</h3>
+        <p>Зручні пересувні вишки-тури для роботи в приміщеннях та на відкритому повітрі. Легкий монтаж.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Зв’яжіться з нами</h2>
+    <div class="contact">
+      <div class="card">
+        <h3>Контакти</h3>
+        <p>📞 <a href="tel:+380930145237">093-01-45-237</a></p>
+        <p>💬 <a href="viber://chat?number=+380930145237">Viber</a> | <a href="https://t.me/share/url?url=https://t.me/your_username">Telegram</a></p>
+        <iframe src="https://maps.google.com/maps?q=49.4260926,32.0614230&z=15&output=embed"></iframe>
+      </div>
+      <div class="card">
+        <h3>Залишити заявку</h3>
+        <form>
+          <input type="text" placeholder="Ваше ім’я" required>
+          <input type="tel" placeholder="Телефон" required>
+          <textarea placeholder="Ваше повідомлення" rows="4"></textarea>
+          <button type="submit">Надіслати</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Риштування UA. Всі права захищено.
+  </footer>
+</body>
+</html>
